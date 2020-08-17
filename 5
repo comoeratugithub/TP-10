@@ -1,0 +1,14 @@
+5) var fort = "Mama, saca la mano de ahi carajo.";
+var i = 0
+var palabras = 0
+var palabrasLargas = 0
+while(fort[i] != "."){
+    while(fort[i] == " "){ i++};
+    while(fort[i] != " " && fort[i] != "."){i++}
+    palabras++;
+    if(palabras > 3){
+        palabrasLargas++;
+    }
+}
+
+console.log("Las palabras que contienen mas de 3 caracteres son en total: " + palabrasLargas);
