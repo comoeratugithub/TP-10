@@ -3,10 +3,15 @@ var i = 0
 var palabras = 0
 var palabrasLargas = 0
 while(fort[i] != "."){
-    while(fort[i] == " "){ i++};
-    while(fort[i] != " " && fort[i] != "."){i++}
+    while(fort[i] == " "){
+    i++
+    }
+    palabras = 0
+    while(fort[i] != " " && fort[i] != "."){
+    i++
+    }
     palabras++;
-    if(palabras > 3){
+    if(palabras.length > 0 && palabras > 3){
         palabrasLargas++;
     }
 }
